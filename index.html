@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="navbar">
+        <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png" alt="">
+            <li>
+                <a href="#">Home</a>
+                <a href="#">Our Profile</a>
+                <a href="#">Portofolio</a>
+                <a href="#message">Message Us</a>
+            </li>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Hi Ainul, Welcome To Website</h1>
+            <p>ini adalah website pertama</p>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/0*l9jKAGAU0bEJqpRS" alt="">
+        </div>
+
+        <div class="quarter">
+            <h2>Our Headquarter</h2>
+        <div class="circle">
+            <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png" alt="">
+            <p>Jakarta</p>
+        </div>
+
+        <div class="circle">
+            <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png" alt="">
+            <p>Bandung</p>
+        </div>
+
+        <div class="circle">
+            <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png" alt="">
+            <p>Surabaya</p>
+        </div>
+
+        </div>
+
+        
+        <div class="grid-container">
+            <h1 id="message">Message Us</h1>
+            <form action="#" id="dataForm" method="post">
+                <label for="name">Nama :</label><input type="text" id="name" name="name" required>
+                
+                <br>
+                <label for="birth">Tanggal Lahir :</label>
+                <input type="date" id="birth" name="birth" required>
+                <br>
+                <label>Jenis Kelamin:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Perempuan</label>
+                </div>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+          
+                <br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="grid-container-2" id="result">
+            <h4 id="currentTime">Current time :</h4>
+            <br>
+        <p><strong>Nama :</strong> <span id="resultName"></span></p>
+        <p><strong>Tanggal Lahir :</strong> <span id="resultBirth"></span></p>
+        <p><strong>Jenis Kelamin :</strong> <span id="resultGender"></span></p>
+        <p><strong>Pesan :</strong> <span id="resultMessage"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created By RevoU</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
